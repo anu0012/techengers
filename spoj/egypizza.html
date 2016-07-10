@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TECHENGERS</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../cmncss.css">
+	 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	 <script type="text/javascript" src="../tabs.js"></script>
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="header__inner">
+        <img class="header__logo" src="images/logo.jpg" alt="LOGO">
+        <h1 class="header__title">
+          TECHENGERS
+        </h1>
+      </div>
+    </header>
+
+    <nav id="drawer" class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="../index.html">Home</a></li>
+        <li class="nav__item"><a href="../home.html">News</a></li>
+        <li class="nav__item"><a href="../about.html">Coding</a></li>
+        <li class="nav__item"><a href="../newpage.html">About Us</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      
+	 <h1 align="center">EGYPIZZA - Pizza</h1><br>
+
+		<div class="tabs">
+    <ul class="tab-links">
+        
+        <li class="active"><a href="#tab2">C++</a></li>
+        <li><a href="#tab3">PYTHON</a></li>
+        
+    </ul>
+
+    <div class="tab-content">
+        
+
+        <div id="tab2" class="tab active">
+		<pre>#include&ltcmath>
+#include &ltcstdio>
+#include &ltvector>
+#include &ltiostream>
+#include &ltalgorithm>
+#include &ltstring.h>
+#include &ltstdlib.h>
+#include &ltalgorithm>
+using namespace std;
+
+int main()
+{
+int n,i=0,ans=0;
+int a1=0,a2=0,a3=0;
+int n1,n2;
+char op;
+cin>>n;
+for(i=0;i&ltn;i++)
+{
+    cin >> n1 >> op >> n2;
+    if(n1==3) a3++;
+    else if(n2==2) a2++;
+    else if(n2==4) a1++;
+}
+ans=a3;
+a1=a1-a3;
+ans+=(a2-a2%2)/2;
+if(a2%2)
+{
+    ans++;
+    a1-=2;
+}
+if(a1 > 0) {
+ans+=(a1-(a1%4))/4;
+if(a1%4>0) {
+ans++;
+}
+}
+cout&lt&ltans+1&lt&ltendl;
+ 
+return 0;
+} 
+		</pre>
+            <h3><p>If you find any difficulty or want to give suggestions please contact us at : support@techengers.com</p></h3>
+        </div>
+
+        <div id="tab3" class="tab">
+            <pre># your code goes here
+			
+from math import *
+i = int(raw_input())
+x = 0
+y = 0
+z = 0
+for w in range(i):
+	a = raw_input()
+	if a == '3/4':
+		y = y + 1
+	elif a == '1/2':
+		x = x + 1
+	else:
+		z += 1
+
+te = x%2
+temp = 0
+if y>= z:
+	z1 = 0
+else:
+	z1 = z - y
+if te == 1 and z1 >= 2:
+	temp = 1
+	z2 = z1 - 2
+elif te == 1 and z1 &lt 2:
+	temp = 1
+	z2 = 0
+else:
+	z2 = z1
+z3 = ceil(z2/4.0)
+t = 1 + y + x/2 + temp + z3
+print int(t)
+			</pre>
+            <h3><p>If you find any difficulty or want to give suggestions please contact us at : support@techengers.com</p></h3>
+        </div>
+
+        
+    </div>
+</div>
+        
+      </section>
+      <footer>
+        <ul>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Follow us on Twitter</a></li>
+          <li><a href="#">RSS</a></li>
+        </ul>
+      </footer>
+    </main>
+  </body>
+</html>
+
+ 

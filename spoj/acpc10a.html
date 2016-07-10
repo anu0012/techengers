@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TECHENGERS</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../cmncss.css">
+	 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	 <script type="text/javascript" src="../tabs.js"></script>
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="header__inner">
+        <img class="header__logo" src="images/logo.jpg" alt="LOGO">
+        <h1 class="header__title">
+          TECHENGERS
+        </h1>
+      </div>
+    </header>
+
+    <nav id="drawer" class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="../index.html">Home</a></li>
+        <li class="nav__item"><a href="../home.html">News</a></li>
+        <li class="nav__item"><a href="../about.html">Coding</a></li>
+        <li class="nav__item"><a href="../newpage.html">About Us</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      
+	<h1 align="center">ACPC10A - What’s Next</h1><br> 
+
+		<div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#tab1">C/C++</a></li>
+        
+        <li><a href="#tab3">PYTHON</a></li>
+        
+    </ul>
+
+    <div class="tab-content">
+        <div id="tab1" class="tab active">
+			<pre>#include&ltstdio.h>
+#include&ltmath.h>
+int main()
+{
+	int a,b,c;
+	while(1){
+	scanf("%d%d%d",&a,&b,&c);
+	
+	  if(a==0 && b==0 && c==0)
+		break;
+	
+		else if((b-a)==(c-b))
+		printf("AP %d\n",a+3*(b-a));
+		
+		else if(b/a == c/b)
+		{
+		 int r,i;
+		 r=b/a;
+		 i=pow(r,3);
+		 printf("GP %d\n",a*i);
+		}
+		
+		
+	}
+	return 0;
+}</pre>
+            <h3><p>If you find any difficulty or want to give suggestions please contact us at : support@techengers.com</p></h3>
+        </div>
+
+        
+
+        <div id="tab3" class="tab">
+            <pre>while 1:
+	a1,a2,a3 = map(int,raw_input().split())
+	if (a1 == 0 and a2 == 0 and a3 == 0):
+		break
+	else:	
+		if ((a1 + a3) == 2*a2):
+			q = a2 - a1
+			print 'AP',a3+q
+		else:
+			q = a2/a1
+			print 'GP',a3*q
+</pre>
+            <h3><p>If you find any difficulty or want to give suggestions please contact us at : support@techengers.com</p></h3>
+        </div>
+
+        
+    </div>
+</div>
+        
+      </section>
+      <footer>
+        <ul>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Follow us on Twitter</a></li>
+          <li><a href="#">RSS</a></li>
+        </ul>
+      </footer>
+    </main>
+  </body>
+</html>
+
+ 

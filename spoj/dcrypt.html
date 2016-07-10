@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TECHENGERS</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../cmncss.css">
+	 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	 <script type="text/javascript" src="../tabs.js"></script>
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="header__inner">
+        <img class="header__logo" src="images/logo.jpg" alt="LOGO">
+        <h1 class="header__title">
+          TECHENGERS
+        </h1>
+      </div>
+    </header>
+
+    <nav id="drawer" class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="../index.html">Home</a></li>
+        <li class="nav__item"><a href="../home.html">News</a></li>
+        <li class="nav__item"><a href="../about.html">Coding</a></li>
+        <li class="nav__item"><a href="../newpage.html">About Us</a></li>
+      </ul>
+    </nav>
+
+    <main>
+     
+		<h1 align="center">DCRYPT - Decrypt the message !</h1><br>
+
+		<div class="tabs">
+    <ul class="tab-links">
+        
+        <li><a href="#tab3">PYTHON</a></li>
+        
+    </ul>
+
+    <div class="tab-content">
+        
+
+        <div id="tab3" class="tab active">
+            <pre># your code goes here
+i = int(raw_input())
+for _ in range(i):
+	k = int(raw_input())
+	a = (raw_input())
+	d = []
+	dict1={'a':1,'b':2,'c':3,'d':4,'e':5,'f':6,'g':7,'h':8,'i':9,'j':10,'k':11,'l':12,'m':13,'n':14,'o':15,'p':16,'q':17,'r':18,'s':19,'t':20,'u':21,'v':22,'w':23,'x':24,'y':25,'z':26,'.':-k,'A':27,'B':28,'C':29,'D':30,
+	'E':31,'F':32,'G':33,'H':34,'I':35,'J':36,'K':37,'L':38,'M':39,'N':40,'O':41,'P':42,'Q':43,'R':44,'S':45,'T':46,'U':47,'V':48,'W':49,'X':50,'Y':51,'Z':52}
+	dict2={0:' ',1:'a', 2:'b', 3:'c', 4:'d', 5:'e', 6:'f', 7:'g', 8:'h', 9:'i', 10:'j', 11:'k', 12:'l', 13:'m', 14:'n', 15:'o', 16:'p', 17:'q', 18:'r', 19:'s', 20:'t', 21:'u', 22:'v', 23:'w', 24:'x', 25:'y', 26:'z',
+	27:'A',28:'B',29:'C',30:'D',31:'E',32:'F',33:'G',34:'H',35:'I',36:'J',37:'K',38:'L',39:'M',40:'N',41:'O',42:'P',43:'Q',44:'R',45:'S',46:'T',47:'U',48:'V',49:'W',50:'X',51:'Y',52:'Z'}
+	n = len(a)
+	if k &lt26:
+		i = 0
+		while i&ltn:
+			v = dict1[a[i]]
+			if v &lt= 26:
+				v = v + k
+				if v > 26:
+					v = v - 26
+			else:
+				v = v + k
+				if v>52:
+					v = v - 26
+			i = i + 1
+			d.append(dict2[v])
+		de = ''.join(d)
+		print de
+	else:
+		k = k - 26
+		i = 0
+		while i&ltn:
+			v = dict1[a[i]]
+			if v &lt= 26:
+				v = v + k
+				if v > 26:
+					v = v - 26
+			else:
+				v = v + k
+				if v>52:
+					v = v - 26
+			i = i + 1
+			if v &lt= 26 and v != 0:
+				v = v + 26
+			elif v > 26:
+				v = v - 26
+			d.append(dict2[v])
+		de = ''.join(d)
+		print de
+		
+			</pre>
+            <h3><p>If you find any difficulty or want to give suggestions please contact us at : support@techengers.com</p></h3>
+        </div>
+
+        
+    </div>
+</div>
+        
+      </section>
+      <footer>
+        <ul>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Follow us on Twitter</a></li>
+          <li><a href="#">RSS</a></li>
+        </ul>
+      </footer>
+    </main>
+  </body>
+</html>
+
+ 

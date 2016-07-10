@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TECHENGERS</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../cmncss.css">
+	 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	 <script type="text/javascript" src="../tabs.js"></script>
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="header__inner">
+        <img class="header__logo" src="images/logo.jpg" alt="LOGO">
+        <h1 class="header__title">
+          TECHENGERS
+        </h1>
+      </div>
+    </header>
+
+    <nav id="drawer" class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="../index.html">Home</a></li>
+        <li class="nav__item"><a href="../home.html">News</a></li>
+        <li class="nav__item"><a href="../about.html">Coding</a></li>
+        <li class="nav__item"><a href="../newpage.html">About Us</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      
+	<h1 align="center">ABSYS - Anti-Blot System</h1><br>
+		<div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#tab1">C</a></li>
+       
+        <li><a href="#tab3">PYTHON</a></li>
+       
+    </ul>
+
+    <div class="tab-content">
+        <div id="tab1" class="tab active">
+			<pre>#include&ltstdio.h>
+#define max 1000
+int main (void)
+{
+   int  n,num1,num2,num3,j,i;
+   char s1[max],s2[max],s3[max];
+   char sp1,sp2,sp3,sp4,e,p;
+
+
+   scanf("%d",&n);
+   for (i=1;i&lt=n;i++)
+{
+
+scanf("%s%c%c%c%s%c%c%c%s",s1,&sp1,&p,&sp2,s2,&sp3,&e,&sp4,s3);
+       for(j=0,num1=0,num2=0,num3=0;s1[j]!='\0';j++)
+       {
+
+          num1=(num1*10)+(s1[j]- '0');
+          if (s1[j] =='m')
+          {
+             num1=0;
+             break;
+          }
+       }
+       for(j=0;s2[j]!='\0';j++)
+       {
+             num2=(num2*10)+(s2[j]-'0');
+             if (s2[j] =='m')
+             {
+                     num2=0;
+                     break;
+             }
+       }
+       for(j=0;s3[j]!='\0';j++)
+       {
+            num3=(num3*10)+(s3[j]-'0');
+            if (s3[j] =='m')
+            {
+              num3=0;
+              break;
+            }
+       }
+    if (num1==0)
+        num1=(num3-num2);
+    else if (num2==0)
+        num2=(num3-num1);
+    else
+        num3=(num1+num2);
+  printf( "%d + %d = %d\n",num1,num2,num3);
+}
+
+    return(0);
+    }</pre>
+            <h3><p>If you find any difficulty or want to give suggestions please contact us at : support@techengers.com</p></h3>
+        </div>
+
+        
+
+        <div id="tab3" class="tab">
+            <pre>i = int(raw_input())
+for x in range(0,i):
+	a = raw_input()
+	n = raw_input().split()
+	if 'm'in n[0]:
+		n[0] = str(int(n[4]) - int(n[2]))
+	elif 'm'in n[2]:
+		n[2] = str(int(n[4]) - int(n[0]))
+	else:
+		n[4] = str(int(n[0]) + int(n[2]))
+	print ' '.join(n)
+</pre>
+            <h3><p>If you find any difficulty or want to give suggestions please contact us at : support@techengers.com</p></h3>
+        </div>
+
+        
+    </div>
+</div>
+        
+      </section>
+      <footer>
+        <ul>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Follow us on Twitter</a></li>
+          <li><a href="#">RSS</a></li>
+        </ul>
+      </footer>
+    </main>
+  </body>
+</html>
+
+ 

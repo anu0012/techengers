@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TECHENGERS</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../cmncss.css">
+	 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	 <script type="text/javascript" src="../tabs.js"></script>
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="header__inner">
+        <img class="header__logo" src="images/logo.jpg" alt="LOGO">
+        <h1 class="header__title">
+          TECHENGERS
+        </h1>
+      </div>
+    </header>
+
+    <nav id="drawer" class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="../index.html">Home</a></li>
+        <li class="nav__item"><a href="../home.html">News</a></li>
+        <li class="nav__item"><a href="../about.html">Coding</a></li>
+        <li class="nav__item"><a href="../newpage.html">About Us</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1 align="center">MRECAMAN</h1> <br></br>
+
+		<div class="tabs">
+    <ul class="tab-links">
+        
+        <li class="active"><a href="#tab2">C++</a></li>
+        <li><a href="#tab3">PYTHON</a></li>
+        
+    </ul>
+
+    <div class="tab-content">
+        
+
+        <div id="tab2" class="tab active">
+		<pre>#include&ltcmath>
+#include &ltcstdio>
+#include &ltvector>
+#include &ltiostream>
+#include &ltalgorithm>
+#include &ltstring.h>
+#include &ltstdlib.h>
+#include &ltalgorithm>
+using namespace std;
+
+#define ll long long
+#define io ios::sync_with_stdio(false); cin.tie(0);
+using namespace std;
+ll a[500005];
+ll v[3012501] = {0};
+int main()
+{
+	io
+	
+	v[0] = 1;
+	a[0] = 0;
+	for(int x=1;x&lt=500005;x++)
+	{
+		if(a[x-1]-x>0 && v[a[x-1]-x]==0)
+		{
+			v[a[x-1]-x] = 1;
+			a[x] = a[x-1] - x;
+		}
+		else
+		{
+			v[a[x-1] + x] = 1;
+			a[x] = a[x-1] + x;
+		}
+	}
+	long int n;
+	while(1)
+	{
+		cin>>n;
+		if(n==-1)
+			break;
+		cout&lt&lta[n]&lt&ltendl;
+	}
+	return 0;
+} 
+		</pre>
+            <h3><p>If you find any difficulty or want to give suggestions please contact us at : support@techengers.com</p></h3>
+        </div>
+
+        <div id="tab3" class="tab">
+            <pre># your code goes here
+			
+from sys import stdin
+from itertools import imap
+ 
+def main():
+    a = [0]*500002
+    a[-1] = ''
+    v = [True] * 3012501
+    v[0] = False
+    for x in xrange(1, 500001):
+        if (a[x - 1] - x > 0) and v[a[x - 1] - x]:
+            v[a[x - 1] - x] = False
+            a[x] = a[x - 1] - x
+        else:
+            v[a[x - 1] + x] = False
+            a[x] = a[x - 1] + x
+ 
+    for x in imap(lambda y: a[int(y)], stdin):
+        print x
+ 
+main()
+
+
+			</pre>
+            <h3><p>If you find any difficulty or want to give suggestions please contact us at : support@techengers.com</p></h3>
+        </div>
+
+        
+    </div>
+</div>
+        
+      </section>
+      <footer>
+        <ul>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Follow us on Twitter</a></li>
+          <li><a href="#">RSS</a></li>
+        </ul>
+      </footer>
+    </main>
+  </body>
+</html>
+
+ 

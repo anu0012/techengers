@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TECHENGERS</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../cmncss.css">
+	 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	 <script type="text/javascript" src="../tabs.js"></script>
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="header__inner">
+        <img class="header__logo" src="images/logo.jpg" alt="LOGO">
+        <h1 class="header__title">
+          TECHENGERS
+        </h1>
+      </div>
+    </header>
+
+    <nav id="drawer" class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="../index.html">Home</a></li>
+        <li class="nav__item"><a href="../home.html">News</a></li>
+        <li class="nav__item"><a href="../about.html">Coding</a></li>
+        <li class="nav__item"><a href="../newpage.html">About Us</a></li>
+      </ul>
+    </nav>
+
+    <main>
+    
+	<h1 align="center">AFS - Amazing Factor Sequence</h1><br> 
+
+		<div class="tabs">
+    <ul class="tab-links">
+        
+        <li class="active"><a href="#tab2">C++</a></li>
+        <li><a href="#tab3">PYTHON</a></li>
+        
+    </ul>
+
+    <div class="tab-content">
+        
+
+        <div id="tab2" class="tab active">
+		<pre>    #include&ltbits/stdc++.h>
+    using namespace std;
+    #define ll long long
+ 
+    ll res[1000003];
+    long fn[1000003];
+     
+    int main()
+    {
+    	ios::sync_with_stdio(false);
+    	cin.tie(0);
+    	ll i;
+    	for(i=2;i&lt1000003;i++)
+    	fn[i]=1;
+    	for(i=2;i&lt=1000003;i++)
+    	{
+    		ll k=2;
+    		for(;k*i&lt1000003;k++)
+    		fn[k*i]+=i;
+    	}
+    	for(i=2;i&lt1000003;i++)
+    	res[i]=res[i-1] + fn[i];
+    	int t;
+    	long n;
+    	cin>>t;
+    	while(t--)
+    	{
+    		cin>>n;
+    		cout&lt&ltres[n]&lt&ltendl;
+    	}
+    	return 0;
+    }
+
+</pre>
+            <h3><p>If you find any difficulty or want to give suggestions please contact us at : support@techengers.com</p></h3>
+        </div>
+
+        <div id="tab3" class="tab">
+            <pre>from math import *
+i = int(raw_input())
+for _ in range(i):
+	n = int(raw_input())
+	if n == 1:
+		print 0
+		continue
+ 
+	sum = n - 1
+	t1 = (n/2) + 1
+	
+	i = 1
+	lim = int(sqrt(n)) + 1
+	tsum = (t1*(t1 - 1))/2
+	for x in xrange(2,lim):
+		sum = sum + (t1- 2) * x
+		t2 = n/(x+1) + 1
+		#print 't1',t1,'t2',t2,'x',i
+		t2sum = (t2*(t2-1))/2
+		if t2 != lim - 1:
+			sum = sum + (tsum - t2sum)*(i)
+		i = i + 1
+		t1 = t2
+		tsum = t2sum
+	print sum
+
+</pre>
+            <h3><p>If you find any difficulty or want to give suggestions please contact us at : support@techengers.com</p></h3>
+        </div>
+
+        
+    </div>
+</div>
+        
+      </section>
+      <footer>
+        <ul>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Follow us on Twitter</a></li>
+          <li><a href="#">RSS</a></li>
+        </ul>
+      </footer>
+    </main>
+  </body>
+</html>
+
+ 

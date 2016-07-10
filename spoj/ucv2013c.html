@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TECHENGERS</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../cmncss.css">
+	 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	 <script type="text/javascript" src="../tabs.js"></script>
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="header__inner">
+        <img class="header__logo" src="images/logo.jpg" alt="LOGO">
+        <h1 class="header__title">
+          TECHENGERS
+        </h1>
+      </div>
+    </header>
+
+    <nav id="drawer" class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="../index.html">Home</a></li>
+        <li class="nav__item"><a href="../home.html">News</a></li>
+        <li class="nav__item"><a href="../about.html">Coding</a></li>
+        <li class="nav__item"><a href="../newpage.html">About Us</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1 align="center">UCV2013C</h1> <br></br>
+
+		<div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#tab1">C</a></li>
+     
+        <li><a href="#tab3">PYTHON</a></li>
+        
+    </ul>
+
+    <div class="tab-content">
+       
+
+        <div id="tab1" class="tab active">
+		<pre>#include&ltcmath>
+#include &ltcstdio>
+#include &ltvector>
+#include &ltiostream>
+#include &ltalgorithm>
+#include &ltstring.h>
+#include &ltstdlib.h>
+#include &ltalgorithm>
+using namespace std;
+
+int main()
+{
+    long long int d,f,b,m,temp,diff,mon;
+    cin>>d>>f>>b>>m;
+    while(!(d==0 && f==0 && b==0 && m==0))
+    {
+        temp=(f*(f+1))/2+1;
+        mon=b*temp;
+        diff=mon+m-d;
+        if(diff>0)
+            printf("The firm is trying to bankrupt Farmer Cream by %lld Bsf.\n",diff);
+        else
+            printf("Farmer Cream will have %lld Bsf to spend.\n",d-mon);
+        cin>>d>>f>>b>>m;
+    }
+    return 0;
+} 
+		</pre>
+            <h3><p>If you find any difficulty or want to give suggestions please contact us at : support@techengers.com</p></h3>
+        </div>
+
+        <div id="tab3" class="tab">
+            <pre># your code goes here
+			
+while 1:
+	d,f,b,m = map(int,raw_input().split())
+	if d == 0 and f == 0 and b == 0:
+		break
+	f1 = (f*(f+1))/2 + 1
+	f1 = f1*b
+	l = d - f1
+	if l>= m:
+		print "Farmer Cream will have %d Bsf to spend."%l
+	else:
+		print "The firm is trying to bankrupt Farmer Cream by %d Bsf."%(abs(l-m))
+
+			</pre>
+            <h3><p>If you find any difficulty or want to give suggestions please contact us at : support@techengers.com</p></h3>
+        </div>
+
+        
+    </div>
+</div>
+        
+      </section>
+      <footer>
+        <ul>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Follow us on Twitter</a></li>
+          <li><a href="#">RSS</a></li>
+        </ul>
+      </footer>
+    </main>
+  </body>
+</html>
+
+ 

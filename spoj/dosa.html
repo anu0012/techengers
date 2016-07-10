@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TECHENGERS</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../cmncss.css">
+	 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	 <script type="text/javascript" src="../tabs.js"></script>
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="header__inner">
+        <img class="header__logo" src="images/logo.jpg" alt="LOGO">
+        <h1 class="header__title">
+          TECHENGERS
+        </h1>
+      </div>
+    </header>
+
+    <nav id="drawer" class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="../index.html">Home</a></li>
+        <li class="nav__item"><a href="../home.html">News</a></li>
+        <li class="nav__item"><a href="../about.html">Coding</a></li>
+        <li class="nav__item"><a href="../newpage.html">About Us</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      
+	 <h1 align="center">DOSA - Lalith Dosa</h1><br>
+
+		<div class="tabs">
+    <ul class="tab-links">
+        <li><a href="#tab1">C/C++</a></li>
+        
+    </ul>
+
+    <div class="tab-content">
+        <div id="tab1" class="tab active">
+			<pre>    #include &ltcmath>
+    #include &ltcstdio>
+    #include &ltvector>
+    #include &ltiostream>
+    #include &ltalgorithm>
+    using namespace std;
+     
+    const int inf = 2000000000;
+    int a[1000005];
+    int longest;
+    void find(int x)
+    {
+        int left = 1, right = longest;
+        while(left &lt= right)
+        {
+            int mid = (left + right) >> 1;
+            if(a[mid] &lt= x)
+            {
+                left = mid + 1;
+            }
+            else
+            {
+                right = mid - 1;
+            }
+        }
+        a[++right] = x;
+        if(right > longest)
+            longest = right;
+    }
+    int main() {
+        int n;
+        scanf("%d", &n);
+        for(int i = 0; i &lt n; ++i)
+        {
+            a[i] = inf;
+        }
+        longest = 0;
+        for(int i = 1; i &lt= n; ++i)
+        {
+            int x;
+            scanf("%d", &x);
+            if((x -= i) >= 0)
+                find(x);        
+        }
+        cout &lt&lt n - longest &lt&lt endl;
+     
+        return 0;
+    } 
+</pre>
+            <h3><p>If you find any difficulty or want to give suggestions please contact us at : support@techengers.com</p></h3>
+        </div>
+
+        
+    </div>
+</div>
+        
+      </section>
+      <footer>
+        <ul>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Follow us on Twitter</a></li>
+          <li><a href="#">RSS</a></li>
+        </ul>
+      </footer>
+    </main>
+  </body>
+</html>
+
+ 

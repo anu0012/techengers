@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TECHENGERS</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../cmncss.css">
+	 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	 <script type="text/javascript" src="../tabs.js"></script>
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="header__inner">
+        <img class="header__logo" src="images/logo.jpg" alt="LOGO">
+        <h1 class="header__title">
+          TECHENGERS
+        </h1>
+      </div>
+    </header>
+
+    <nav id="drawer" class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="../index.html">Home</a></li>
+        <li class="nav__item"><a href="../home.html">News</a></li>
+        <li class="nav__item"><a href="../about.html">Coding</a></li>
+        <li class="nav__item"><a href="../newpage.html">About Us</a></li>
+      </ul>
+    </nav>
+
+    <main>
+     
+	<h1 align="center">BWIDOW - Black Widow Rings</h1><br>
+
+		<div class="tabs">
+    <ul class="tab-links">
+        
+        <li class="active"><a href="#tab2">C++</a></li>
+        <li><a href="#tab3">PYTHON</a></li>
+        
+    </ul>
+
+    <div class="tab-content">
+        
+
+        <div id="tab2" class="tab active">
+		<pre>#include&ltcmath>
+#include &ltcstdio>
+#include &ltvector>
+#include &ltiostream>
+#include &ltalgorithm>
+#include &ltstring.h>
+#include &ltstdlib.h>
+#include &ltalgorithm>
+using namespace std;
+
+int main()
+{
+ int t;
+ scanf("%d",&t);
+ while(t--)
+ {
+  int N,i,j,count=0,flage=0,index;
+  scanf("%d",&N);
+  long r[N],R[N];
+  for(i=0;i&ltN;i++)
+  {
+   scanf("%ld%ld",&r[i],&R[i]);
+  }
+  for(i=0;i&ltN;i++)
+  {
+   j=0,count=0;
+   for(j=0;j&ltN;j++)
+   {
+    if(j!=i)
+    {
+     if(r[i]>R[j])
+      count++;
+     else{
+      flage=0;
+      break;
+     }
+    }
+   }
+   if(count==(N-1)){
+    flage=1;
+    index=i;
+    break;
+   }
+  }
+  if(flage==1)
+   printf("%d\n",index+1);
+  else
+   printf("-1\n");
+ }
+ return 0;
+} 
+		</pre>
+            <h3><p>If you find any difficulty or want to give suggestions please contact us at : support@techengers.com</p></h3>
+        </div>
+
+        <div id="tab3" class="tab">
+            <pre># your code goes here
+i = int(raw_input())
+for x in range(i):
+	n = int(raw_input())
+	inn = [0]*n
+	ou = [0]*n
+	for w in range(n):
+		inn[w],ou[w] = map(int,raw_input().split())
+	a = ou.index(max(ou))
+	
+	ou.pop(a)
+	if inn[a] > max(ou):
+		print a+1
+	else:
+		print -1
+				</pre>
+            <h3><p>If you find any difficulty or want to give suggestions please contact us at : support@techengers.com</p></h3>
+        </div>
+
+       
+    </div>
+</div>
+        
+      </section>
+      <footer>
+        <ul>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Follow us on Twitter</a></li>
+          <li><a href="#">RSS</a></li>
+        </ul>
+      </footer>
+    </main>
+  </body>
+</html>
+
+ 

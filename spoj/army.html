@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TECHENGERS</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../cmncss.css">
+	 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	 <script type="text/javascript" src="../tabs.js"></script>
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="header__inner">
+        <img class="header__logo" src="images/logo.jpg" alt="LOGO">
+        <h1 class="header__title">
+          TECHENGERS
+        </h1>
+      </div>
+    </header>
+
+    <nav id="drawer" class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="../index.html">Home</a></li>
+        <li class="nav__item"><a href="../home.html">News</a></li>
+        <li class="nav__item"><a href="../about.html">Coding</a></li>
+        <li class="nav__item"><a href="../newpage.html">About Us</a></li>
+      </ul>
+    </nav>
+
+    <main>
+    
+	<h1 align="center">ARMY - Army Strength</h1><br>
+
+		<div class="tabs">
+    <ul class="tab-links">
+      
+        <li class="active"><a href="#tab2">C++</a></li>
+        <li><a href="#tab3">PYTHON</a></li>
+        
+    </ul>
+
+    <div class="tab-content">
+        <div id="tab1" class="tab active">
+			<pre>
+			THE CODE GOES HERE.......
+			</pre>
+            <h3><p>If you find any difficulty or want to give suggestions please contact us at : support@techengers.com</p></h3>
+        </div>
+
+        <div id="tab2" class="tab active">
+			<pre>#include&ltcmath>
+#include &ltcstdio>
+#include &ltvector>
+#include &ltiostream>
+#include &ltalgorithm>
+#include &ltstring.h>
+#include &ltstdlib.h>
+#include &ltalgorithm>
+using namespace std;
+
+int main()
+{ int t;
+scanf("%d",&t);
+while(t--)
+{ 
+  int m,n;
+  scanf("%d%d",&m,&n);
+  int a[m],b[n], maximum,maximum1, c;
+  for (c = 0; c &lt m; c++)
+    scanf("%d", &a[c]);
+  for(c=0;c&ltn;c++)
+  {
+  	scanf("%d",&b[c]);
+  }
+ 
+  maximum = a[0];
+ 
+  for (c = 1; c &lt m; c++)
+  {
+    if (a[c] > maximum)
+    {
+       maximum  = a[c];
+    }
+  }
+    maximum1=b[0];
+   for (c = 1; c &lt n; c++)
+  {
+    if (b[c] > maximum1)
+    {
+       maximum1 = b[c];
+    }
+  }
+  if(maximum>=maximum1)
+  {
+  	printf("Godzilla\n");
+  }
+  else if(maximum1>maximum)
+  printf("MechaGodzilla\n");
+}
+  return 0;
+}			
+			</pre>
+            <h3><p>If you find any difficulty or want to give suggestions please contact us at : support@techengers.com</p></h3>
+        </div>
+
+        <div id="tab3" class="tab">
+            <pre>from math import *
+i = int(raw_input())
+for _ in range(i):
+	a1 = raw_input()
+	n,m = raw_input().split()
+	a = map(int,raw_input().split())
+	b =  map(int,raw_input().split())
+	x,y = max(a),max(b)
+	if x>=y:
+		print "Godzilla"
+	else:
+		print "MechaGodzilla"
+				</pre>
+            <h3><p>If you find any difficulty or want to give suggestions please contact us at : support@techengers.com</p></h3>
+        </div>
+
+        
+    </div>
+</div>
+        
+      </section>
+      <footer>
+        <ul>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Follow us on Twitter</a></li>
+          <li><a href="#">RSS</a></li>
+        </ul>
+      </footer>
+    </main>
+  </body>
+</html>
+
+ 
